@@ -47,6 +47,6 @@
   },
   "dependencies": {
     "capitalize": "^1.0.0",
-    "random-sentence": "1.0.0"
+    "random-sentence": "1.0.1"
   }
 }
