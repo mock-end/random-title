@@ -16,9 +16,6 @@ $ npm install --save random-title
 
 ## Usage
 
-> For more use-cases see the [tests](https://github.com/mock-end/random-title/blob/master/test/spec/index.js)
-
-
 ```js
 var randomTitle = require('random-title');
 
