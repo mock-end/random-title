@@ -1,6 +1,6 @@
 {
   "name": "random-title",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Return a random title populated by semi-pronounceable random (nonsense) words.",
   "main": "index.js",
   "directories": {
@@ -50,6 +50,6 @@
   },
   "dependencies": {
     "capitalize": "^1.0.0",
-    "random-sentence": "1.0.2"
+    "random-sentence": "1.0.3"
   }
 }
