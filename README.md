@@ -55,8 +55,12 @@ randomTitle(5, 5); // should only have 5 worlds.
 **Note**: these min and max are **inclusive**, so they are included in the range. 
 
 
-
 ## Related
+
+- [random-sentence](https://github.com/mock-end/random-sentence) - Return a random sentence populated by semi-pronounceable random (nonsense) words.
+- [random-paragraph](https://github.com/mock-end/random-paragraph) - Return a random paragraph generated from sentences populated by semi-pronounceable random (nonsense) words.
+- [random-syllable](https://github.com/mock-end/random-syllable) - Return a semi-speakable syllable, 2 or 3 letters.
+- [random-lorem](https://github.com/mock-end/random-lorem) - Return a semi-pronounceable random (nonsense) word.
 
 
 ## Contributing
