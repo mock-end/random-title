@@ -1,7 +1,6 @@
 # random-title
 
-> Generate a random title.
-
+> Return a random title populated by semi-pronounceable random (nonsense) words.
 
 [![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/mock-end/random-title/blob/master/LICENSE)
 
@@ -23,46 +22,42 @@ $ npm install --save random-title
 ```js
 var randomTitle = require('random-title');
 
-// randomTitle(min, max);
-// `min` and `max` should between `1` and `20`
+// API
+// - randomTitle();
+// - randomTitle(max);
+// - randomTitle(min, max);
+```
 
+By default, the worlds count of the title would between `2` and `20`:
+
+```js
 randomTitle();
-// => Morbi Leo Risus Porta Ac Consectetur Vestibulum At Eros.
+// => Morbi Leo Cisus Porta Ac Consectetur Vestibulum Eros.
+```
 
+Can optionally provide max, and the worlds count would be between `2` and `max`:
+
+```js
 randomTitle(8);
 // => Fusce Dapibus Tellus Cursus Commodo.
-
-randomTitle(4, 9);
-// => Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit.
-
-randomTitle(5, 5);
-// => Maecenas Faucibus Mollis Interdum As.
 ```
+
+Can optionally provide both min and max:
+
+```js
+randomTitle(4, 9);
+// => Dolor Sit Amet Consectetur Adipiscing Elit.
+
+randomTitle(5, 5); // should only have 5 worlds.
+// => Maecenas Faucibus Mollis Interdum Asd.
+```
+
+**Note**: these min and max are **inclusive**, so they are included in the range. 
+
+
 
 ## Related
 
-- [random-integral](https://github.com/mock-end/random-integral) - Generate a random integer.
-- [random-natural](https://github.com/mock-end/random-natural) - Generate a random natural number.
-- [random-decimal](https://github.com/mock-end/random-decimal) - Generate a random decimal.
-- [random-index](https://github.com/mock-end/random-index) - Generate a random array-like index.
-- [random-hexadecimal](https://github.com/mock-end/random-hexadecimal) - Generate a random hexadecimal number.
-- [random-octal](https://github.com/mock-end/random-octal) - Generate a random octal.
-- [random-unicode](https://github.com/mock-end/random-unicode) - Generate a random unicode.
-- [random-bool](https://github.com/mock-end/random-bool) - Generate a random boolean (true/false).
-- [random-char](https://github.com/mock-end/random-char) - Generate a random char.
-- [random-lorem](https://github.com/mock-end/random-lorem) - Generate a random world.
-- [random-sentence](https://github.com/mock-end/random-sentence) - Generate a random sentence.
-- [random-paragraph](https://github.com/mock-end/random-paragraph) - Generate a random paragraph.
-- [random-tld](https://github.com/mock-end/random-tld) - Return a random tld.
-- [random-domains](https://github.com/mock-end/random-domains) - Generate a random domain name.
-- [random-uri](https://github.com/mock-end/random-uri.git) - Generate a random url.
-- [random-email](https://github.com/mock-end/random-email) - Generate a random email.
-- [random-lang](https://github.com/mock-end/random-lang) - Return a random language name.
-- [random-mobile](https://github.com/mock-end/random-mobile) - Generate a random chinese mobile phone number.
-- [random-zipcode](https://github.com/mock-end/random-zipcode) - Generate a random chinese zipcode.
-- [random-ipv4](https://github.com/mock-end/random-ipv4) - Generate a random ipv4 address.
-- [random-ipv6](https://github.com/mock-end/random-ipv6) - Generate a random ipv6 address.
-- [random-color](https://github.com/mock-end/random-color) - Generate a random color.
 
 ## Contributing
 
