@@ -36,21 +36,21 @@ Default is a sentence with a random number of words from `12` to `18`.
 
 ```js
 randomTitle();
-// => 'Witpevze mappos isoletu fo res bi geow pofin mu rupoho revzi utva ne.'
+// => 'Witpevze Mappos Isoletu Fo Res Bi Aeow Pofin Rupoho Revzi Utva Ne.'
 ```
 
 Optionally specify the number of words in the sentence:
 
 ```js
 randomTitle({words: 5});
-// => 'Waddik jeasmov cakgilta ficub up.'
+// => 'Waddik Jeasmov Cakgilta Ficub Up.'
 ```
 
 Can optionally provide `min` and `max`, then with a random words count:
 
 ```js
 randomTitle({min: 4, max: 9});
-// => 'Fusce dapibus tellus ac cursus commodo.'
+// => 'Fusce Dapibus Tellus Ac Cursus Commodo.'
 ```
 
 **Note**: these min and max are **inclusive**, so they are included in the range. 
