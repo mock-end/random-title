@@ -28,9 +28,7 @@ var randomTitle = require('random-title');
 // - max
 ```
 
-The sentence starts with a capital letter, and ends with a period.
-
-Default is a sentence with a random number of words from `12` to `18`.
+Default is a title with a random number of words from `12` to `18`.
 
 *This length is chosen as the default as it works out to the average English sentence is in that range.*
 
@@ -39,7 +37,7 @@ randomTitle();
 // => 'Witpevze Mappos Isoletu Fo Res Bi Aeow Pofin Rupoho Revzi Utva Ne.'
 ```
 
-Optionally specify the number of words in the sentence:
+Optionally specify the number of words in the title:
 
 ```js
 randomTitle({words: 5});
