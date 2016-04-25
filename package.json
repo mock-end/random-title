@@ -50,6 +50,6 @@
   },
   "dependencies": {
     "capitalize": "^1.0.0",
-    "random-sentence": "1.0.3"
+    "random-sentence": "1.0.4"
   }
 }

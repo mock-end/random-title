@@ -3,6 +3,6 @@
 var capitalize     = require('capitalize');
 var randomSentence = require('random-sentence');
 
-module.exports = function (min, max) {
-  return capitalize(randomSentence(min, max));
+module.exports = function (options) {
+  return capitalize(randomSentence(options));
 };

@@ -20,33 +20,37 @@ $ npm install --save random-title
 var randomTitle = require('random-title');
 
 // API
-// - randomTitle();
-// - randomTitle(max);
-// - randomTitle(min, max);
+// - randomTitle([options]);
+
+// options
+// - words
+// - min
+// - max
 ```
 
-By default, the worlds count of the title would between `2` and `20`:
+The sentence starts with a capital letter, and ends with a period.
+
+Default is a sentence with a random number of words from `12` to `18`.
+
+*This length is chosen as the default as it works out to the average English sentence is in that range.*
 
 ```js
 randomTitle();
-// => Morbi Leo Cisus Porta Ac Consectetur Vestibulum Eros.
+// => 'Witpevze mappos isoletu fo res bi geow pofin mu rupoho revzi utva ne.'
 ```
 
-Can optionally provide max, and the worlds count would be between `2` and `max`:
+Optionally specify the number of words in the sentence:
 
 ```js
-randomTitle(8);
-// => Fusce Dapibus Tellus Cursus Commodo.
+randomTitle({words: 5});
+// => 'Waddik jeasmov cakgilta ficub up.'
 ```
 
-Can optionally provide both min and max:
+Can optionally provide `min` and `max`, then with a random words count:
 
 ```js
-randomTitle(4, 9);
-// => Dolor Sit Amet Consectetur Adipiscing Elit.
-
-randomTitle(5, 5); // should only have 5 worlds.
-// => Maecenas Faucibus Mollis Interdum Asd.
+randomTitle({min: 4, max: 9});
+// => 'Fusce dapibus tellus ac cursus commodo.'
 ```
 
 **Note**: these min and max are **inclusive**, so they are included in the range. 
@@ -58,7 +62,6 @@ randomTitle(5, 5); // should only have 5 worlds.
 - [random-paragraph](https://github.com/mock-end/random-paragraph) - Return a random paragraph generated from sentences populated by semi-pronounceable random (nonsense) words.
 - [random-syllable](https://github.com/mock-end/random-syllable) - Return a semi-speakable syllable, 2 or 3 letters.
 - [random-lorem](https://github.com/mock-end/random-lorem) - Return a semi-pronounceable random (nonsense) word.
-
 
 ## Contributing
 
